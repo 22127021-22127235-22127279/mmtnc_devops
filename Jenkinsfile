@@ -30,7 +30,7 @@ pipeline {
 
                 script {
                     // Đăng nhập vào Docker Hub sử dụng credentials đã định nghĩa trong Jenkins
-                        bat 'docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD'
+                        bat "echo ${DOCKER_PASSWORD} | docker login -u ${DOCKER_USERNAME} --password-stdin"
                     }
                 }
             }
