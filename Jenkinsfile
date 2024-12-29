@@ -11,7 +11,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Kiểm tra mã nguồn từ Git repository
-                git 'https://github.com/dlhmy22/meow.git'
+                git 'https://github.com/22127021-22127235-22127279/mmtnc_devops.git'
             }
         }
 
